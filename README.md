@@ -21,5 +21,10 @@ python3 cli.py patch_address --version=v1.0-beta --contract_name=EthAlpSave --ne
 
 __Patch a contract ABI__
 ```
-python3 cli.py patch_abi --version=v1.0-beta --contract_type=L2Vault --contract_repo_branch=main
+python3 cli.py patch_abi --version=v1.0-beta --contract_type=L2Vault --contract_abi_repo_branch=master
+```
+
+__Add a new contract to addressbook__
+```
+python3 cli.py new_contract --version=v1.0-beta --network_id=1 --contract_name=EthEntryVault --contract_address=0x7C9414Ad01Db4C50F8fa8C233ff6869284FFF648 --contract_type=Vault --contract_abi_repo_branch=master
 ```

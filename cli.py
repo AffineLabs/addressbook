@@ -81,5 +81,83 @@ class CLI:
         new_addressbook_dump = json.dumps(new_addressbook, indent = 2)
         write_json(version_dir, "addressbook.minified.json", new_addressbook_dump)
 
+    def patch_abi(self, version, contract_type, contract_abi_repo_branch):
+        new_abi_address = f'https://raw.githubusercontent.com/AffineLabs/contracts/{contract_abi_repo_branch}/abi/{contract_type}.json'
+        new_abi = requests.get(new_abi_address)
+
+        time_now_gmt = time_now()
+        root_dir = os.getcwd()
+        version_dir = os.path.join(root_dir, version)
+
+        # Update legacy addressbook
+        legacy_addressbook_path = os.path.join(version_dir, "addressbook.json")
+        legacy_addressbook = read_json(legacy_addressbook_path)
+        for contract_name in legacy_addressbook.keys():
+            if legacy_addressbook[contract_name]["contractType"] == contract_type:
+                legacy_addressbook[contract_name]["abi"] = new_abi.json()
+                legacy_addressbook[contract_name]["lastUpdated"] = time_now_gmt
+        legacy_addressbook_dump = json.dumps(legacy_addressbook, indent = 2)
+        write_json(version_dir, "addressbook.json", legacy_addressbook_dump)
+
+        # Update new addressbook
+        new_addressbook_path = os.path.join(version_dir, "addressbook.minified.json")
+        new_addressbook = read_json(new_addressbook_path)
+        for network_id in new_addressbook.keys():
+            for contract_name in legacy_addressbook[network_id].keys():
+                if legacy_addressbook[network_id][contract_name]["contractType"] == contract_type:
+                    new_addressbook[network_id][contract_name]["lastUpdated"] = time_now_gmt
+                    # Update the ABI file
+                    write_json(os.path.join(version_dir, network_id), f'{contract_type}.json', str(new_abi.content, 'utf-8'))
+        new_addressbook_dump = json.dumps(new_addressbook, indent = 2)
+        write_json(version_dir, "addressbook.minified.json", new_addressbook_dump)
+
+    def new_contract(self, version, network_id, contract_name, contract_address, contract_type, contract_abi_repo_branch):
+        abi_address = f'https://raw.githubusercontent.com/AffineLabs/contracts/{contract_abi_repo_branch}/abi/{contract_type}.json'
+        abi = requests.get(abi_address)
+
+        time_now_gmt = time_now()
+        root_dir = os.getcwd()
+        version_dir = os.path.join(root_dir, version)
+
+        network_id = str(network_id)
+        network_mapping = {
+            "1": {
+                "blockchain": "Ethereum",
+                "deployment_net": "Mainnet",
+            },
+            "137": {
+                "blockchain": "Polygon",
+                "deployment_net": "Mainnet",
+            }
+        }
+        # Update legacy addressbook
+        legacy_addressbook_path = os.path.join(version_dir, "addressbook.json")
+        legacy_addressbook = read_json(legacy_addressbook_path)
+        legacy_addressbook[contract_name] = {
+            "blockchain": network_mapping[network_id]["blockchain"],
+            "deployment_net": network_mapping[network_id]["deployment_net"],
+            "network_id": network_id,
+            "address": contract_address,
+            "lastUpdated": time_now_gmt,
+            "contractType": contract_type,
+            "abi": abi.json()
+        }
+        legacy_addressbook_dump = json.dumps(legacy_addressbook, indent = 2)
+        write_json(version_dir, "addressbook.json", legacy_addressbook_dump)
+
+        # Update new addressbook
+        new_addressbook_path = os.path.join(version_dir, "addressbook.minified.json")
+        new_addressbook = read_json(new_addressbook_path)
+        new_addressbook[network_id][contract_name] = {
+            "address": contract_address,
+            "lastUpdated": time_now_gmt,
+            "contractType": contract_type,
+            "abiPath": f'{version}/{network_id}/{contract_type}.json'
+        }
+        new_addressbook_dump = json.dumps(new_addressbook, indent = 2)
+        write_json(version_dir, "addressbook.minified.json", new_addressbook_dump)
+
+        # Update the ABI file
+        write_json(os.path.join(version_dir, network_id), f'{contract_type}.json', str(abi.content, 'utf-8'))
 if __name__ == '__main__': 
     fire.Fire(CLI) 
