@@ -19,7 +19,7 @@ __Patch a contract address__
 python3 cli.py patch_address --version=v1.0-beta --contract_name=EthAlpSave --new_address=0x7C9414Ad01Db4C50F8fa8C233ff6869284FFF648
 ```
 
-__Patch a contract address__
+__Patch a contract ABI__
 ```
-python3 cli.py patch_address --version=v1.0-beta --contract_type=L2Vault --contract_repo_branch=main
+python3 cli.py patch_abi --version=v1.0-beta --contract_type=L2Vault --contract_repo_branch=main
 ```

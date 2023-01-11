@@ -1,14 +1,19 @@
-import requests
+import datetime
+import fire
 import json
 import os
-import fire
+import requests
+
+def time_now():
+    datetime_now = datetime.datetime.now(datetime.timezone.utc)
+    return datetime_now.strftime('%a, %d %b %Y %H:%M:%S GMT')
 
 def safe_mkdir(dir):
     if not os.path.exists(dir):
         os.makedirs(dir)
 
 def read_json(file_path):
-    f = open('data.json')
+    f = open(file_path)
     return json.load(f)
 
 def write_json(dir, file_name, json_object):
@@ -51,6 +56,30 @@ class CLI:
         new_addressbook_dump = json.dumps(new_addressbook, indent = 2)
         write_json(version_dir, "addressbook.minified.json", new_addressbook_dump)
 
+
+    def patch_address(self, version, contract_name, new_address):
+        time_now_gmt = time_now()
+        root_dir = os.getcwd()
+        version_dir = os.path.join(root_dir, version)
+
+        # Update legacy addressbook
+        legacy_addressbook_path = os.path.join(version_dir, "addressbook.json")
+        legacy_addressbook = read_json(legacy_addressbook_path)
+        if contract_name in legacy_addressbook:
+            legacy_addressbook[contract_name]["address"] = new_address
+            legacy_addressbook[contract_name]["lastUpdated"] = time_now_gmt
+        legacy_addressbook_dump = json.dumps(legacy_addressbook, indent = 2)
+        write_json(version_dir, "addressbook.json", legacy_addressbook_dump)
+
+        # Update new addressbook
+        new_addressbook_path = os.path.join(version_dir, "addressbook.minified.json")
+        new_addressbook = read_json(new_addressbook_path)
+        for network_id in new_addressbook.keys():
+            if contract_name in new_addressbook[network_id]:
+                new_addressbook[network_id][contract_name]["address"] = new_address
+                new_addressbook[network_id][contract_name]["lastUpdated"] = time_now_gmt
+        new_addressbook_dump = json.dumps(new_addressbook, indent = 2)
+        write_json(version_dir, "addressbook.minified.json", new_addressbook_dump)
 
 if __name__ == '__main__': 
     fire.Fire(CLI) 
