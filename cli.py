@@ -118,14 +118,12 @@ class CLI:
         time_now_gmt = time_now()
         root_dir = os.getcwd()
         version_dir = os.path.join(root_dir, version)
-
-        network_id = str(network_id)
         network_mapping = {
-            "1": {
+            1: {
                 "blockchain": "Ethereum",
                 "deployment_net": "Mainnet",
             },
-            "137": {
+            137: {
                 "blockchain": "Polygon",
                 "deployment_net": "Mainnet",
             }
@@ -148,7 +146,7 @@ class CLI:
         # Update new addressbook
         new_addressbook_path = os.path.join(version_dir, "addressbook.minified.json")
         new_addressbook = read_json(new_addressbook_path)
-        new_addressbook[network_id][contract_name] = {
+        new_addressbook[str(network_id)][contract_name] = {
             "address": contract_address,
             "lastUpdated": time_now_gmt,
             "contractType": contract_type,
@@ -158,6 +156,6 @@ class CLI:
         write_json(version_dir, "addressbook.minified.json", new_addressbook_dump)
 
         # Update the ABI file
-        write_json(os.path.join(version_dir, network_id), f'{contract_type}.json', str(abi.content, 'utf-8'))
+        write_json(os.path.join(version_dir, str(network_id)), f'{contract_type}.json', str(abi.content, 'utf-8'))
 if __name__ == '__main__': 
     fire.Fire(CLI) 
