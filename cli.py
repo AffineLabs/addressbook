@@ -102,6 +102,14 @@ class CLI:
             137: {
                 "blockchain": "Polygon",
                 "deployment_net": "Mainnet",
+            },
+            5: {
+                "blockchain": "Ethereum",
+                "deployment_net": "Goerli",
+            },
+            80001: {
+                "blockchain": "Polygon",
+                "deployment_net": "Mumbai",
             }
         }
         # Update legacy addressbook
