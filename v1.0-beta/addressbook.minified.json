@@ -30,7 +30,7 @@
       "contractType": "ConvexStrategy",
       "abiPath": "v1.0-beta/1/ConvexStrategy.json"
     },
-    "EthUsdEarn": {
+    "EthUsdcEarn": {
       "address": "0x78Bb94Feab383ccEd39766a7d6CF31dED177Ad0c",
       "lastUpdated": "Wed, 18 Jan 2023 15:49:53 GMT",
       "contractType": "Vault",

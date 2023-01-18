@@ -12,7 +12,7 @@
       "contractType": "L1WormholeRouter",
       "abiPath": "test/5/L1WormholeRouter.json"
     },
-    "EthUsdEarn": {
+    "EthUsdcEarn": {
       "address": "0xaEb48ACCE90Ae100687f00176d914540EF6DED91",
       "lastUpdated": "Tue, 03 Jan 2023 17:55:16 GMT",
       "contractType": "Vault",

@@ -1210,7 +1210,7 @@
     "proof_format": "POA",
     "version": "test"
   },
-  "EthUsdEarn": {
+  "EthUsdcEarn": {
     "blockchain": "Ethereum",
     "deployment_net": "Goerli",
     "network_id": 5,
