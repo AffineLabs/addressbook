@@ -9955,7 +9955,7 @@
     "contractType": "Vault",
     "events_to_watch": [],
     "proof_format": "POW",
-    "version": "v1.0-beta"
+    "version": "v1.0-beta",
     "abi": [
       {
         "anonymous": false,
