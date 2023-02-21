@@ -35,6 +35,12 @@
       "lastUpdated": "Wed, 18 Jan 2023 15:49:53 GMT",
       "contractType": "Vault",
       "abiPath": "v1.0-beta/1/Vault.json"
+    },
+    "WethEarnEth": {
+      "address": "0x87964c5a8F2b13e04b86B4D12e0EeA13Ff144DC3",
+      "lastUpdated": "Tue, 21 Feb 2023 20:27:50 GMT",
+      "contractType": "Vault",
+      "abiPath": "v1.0-beta/1/Vault.json"
     }
   },
   "137": {
