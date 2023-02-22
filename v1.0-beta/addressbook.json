@@ -9953,6 +9953,9 @@
     "address": "0x87964c5a8F2b13e04b86B4D12e0EeA13Ff144DC3",
     "lastUpdated": "Tue, 21 Feb 2023 20:27:50 GMT",
     "contractType": "Vault",
+    "events_to_watch": [],
+    "proof_format": "POW",
+    "version": "v1.0-beta",
     "abi": [
       {
         "anonymous": false,
