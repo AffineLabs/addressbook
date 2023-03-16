@@ -8233,7 +8233,7 @@
       }
     ],
     "events_to_watch": [],
-    "proof_format": "POS",
+    "proof_format": "POW",
     "version": "test"
   }
 }
