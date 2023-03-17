@@ -9946,7 +9946,7 @@
     "proof_format": "POW",
     "version": "v1.0-beta"
   },
-  "WethEarnEth": {
+  "EthWethEarn": {
     "blockchain": "Ethereum",
     "deployment_net": "Mainnet",
     "network_id": 1,
