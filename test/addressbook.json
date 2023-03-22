@@ -6652,8 +6652,8 @@
     "blockchain": "Ethereum",
     "deployment_net": "Goerli",
     "network_id": 5,
-    "address": "0x97484c6588Ed12468da88A1480Cb4D5Bb8616484",
-    "lastUpdated": "Wed, 15 Mar 2023 15:50:18 GMT",
+    "address": "0x101BFDC5B1BddE0345F279175795646B913BC568",
+    "lastUpdated": "Wed, 22 Mar 2023 02:12:08 GMT",
     "contractType": "Vault",
     "abi": [
       {
