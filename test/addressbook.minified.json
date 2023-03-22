@@ -19,8 +19,8 @@
       "abiPath": "test/5/Vault.json"
     },
     "EthWethEarn": {
-      "address": "0x101BFDC5B1BddE0345F279175795646B913BC568",
-      "lastUpdated": "Wed, 22 Mar 2023 02:12:08 GMT",
+      "address": "0xbE4c976749680FbB57184fdb8FF37743Ac5414e7",
+      "lastUpdated": "Wed, 22 Mar 2023 13:29:35 GMT",
       "contractType": "Vault",
       "abiPath": "test/5/Vault.json"
     }
