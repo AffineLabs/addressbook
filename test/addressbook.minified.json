@@ -23,6 +23,12 @@
       "lastUpdated": "Wed, 22 Mar 2023 13:29:35 GMT",
       "contractType": "Vault",
       "abiPath": "test/5/Vault.json"
+    },
+    "EthRouter": {
+      "address": "0xE76CD61340791705419E32171d498d5FEcc8F1D2",
+      "lastUpdated": "Thu, 23 Mar 2023 06:01:20 GMT",
+      "contractType": "Router",
+      "abiPath": "test/5/Router.json"
     }
   },
   "80001": {
