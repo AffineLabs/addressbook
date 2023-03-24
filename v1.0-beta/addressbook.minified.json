@@ -37,10 +37,16 @@
       "abiPath": "v1.0-beta/1/Vault.json"
     },
     "EthWethEarn": {
-      "address": "0x87964c5a8F2b13e04b86B4D12e0EeA13Ff144DC3",
-      "lastUpdated": "Tue, 21 Feb 2023 20:27:50 GMT",
+      "address": "0x5185fe072f9eE947bF017C7854470e11C2cFb32a",
+      "lastUpdated": "Fri, 24 Mar 2023 20:39:01 GMT",
       "contractType": "Vault",
       "abiPath": "v1.0-beta/1/Vault.json"
+    },
+    "EthRouter": {
+      "address": "0x9884E77B83880dDfa81457273D21E260d4E3B6eB",
+      "lastUpdated": "Fri, 24 Mar 2023 20:24:34 GMT",
+      "contractType": "Router",
+      "abiPath": "v1.0-beta/1/Router.json"
     }
   },
   "137": {
