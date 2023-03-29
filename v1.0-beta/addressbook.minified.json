@@ -37,8 +37,8 @@
       "abiPath": "v1.0-beta/1/Vault.json"
     },
     "EthWethEarn": {
-      "address": "0x5185fe072f9eE947bF017C7854470e11C2cFb32a",
-      "lastUpdated": "Fri, 24 Mar 2023 20:39:01 GMT",
+      "address": "0x72D51B2233c5feA8a702FDd0E51B0adE95638f2c",
+      "lastUpdated": "Wed, 29 Mar 2023 19:18:52 GMT",
       "contractType": "Vault",
       "abiPath": "v1.0-beta/1/Vault.json"
     },
