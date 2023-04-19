@@ -29,6 +29,12 @@
       "lastUpdated": "Thu, 23 Mar 2023 06:01:20 GMT",
       "contractType": "Router",
       "abiPath": "test/5/Router.json"
+    },
+    "EthSushiLpUsdcWeth": {
+      "address": "0x46E9C91BA2cAFb943fc839917949b40A304dE84B",
+      "lastUpdated": "Wed, 19 Apr 2023 17:45:56 GMT",
+      "contractType": "StrategyVault",
+      "abiPath": "test/5/StrategyVault.json"
     }
   },
   "80001": {
