@@ -49,8 +49,8 @@
       "abiPath": "v1.0-beta/1/Router.json"
     },
     "EthSushiLpUsdcWeth": {
-      "address": "0xF582cD78E1282323FC94BA48a3B482316458AaAb",
-      "lastUpdated": "Tue, 25 Apr 2023 21:06:04 GMT",
+      "address": "0x61A18EE9d6d51F838c7e50dFD750629Fd141E944",
+      "lastUpdated": "Fri, 28 Apr 2023 01:08:36 GMT",
       "contractType": "StrategyVault",
       "abiPath": "v1.0-beta/1/StrategyVault.json"
     }
