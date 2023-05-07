@@ -35,6 +35,12 @@
       "lastUpdated": "Thu, 20 Apr 2023 20:52:43 GMT",
       "contractType": "StrategyVault",
       "abiPath": "test/5/StrategyVault.json"
+    },
+    "Degen": {
+      "address": "0xdd4037f6bB0C39F3F58b1eA3940eF18c0C9dcf7A",
+      "lastUpdated": "Sun, 07 May 2023 09:14:31 GMT",
+      "contractType": "StrategyVault",
+      "abiPath": "test/5/StrategyVault.json"
     }
   },
   "80001": {
