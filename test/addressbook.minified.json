@@ -37,8 +37,8 @@
       "abiPath": "test/5/StrategyVault.json"
     },
     "Degen": {
-      "address": "0xdd4037f6bB0C39F3F58b1eA3940eF18c0C9dcf7A",
-      "lastUpdated": "Sun, 07 May 2023 09:14:31 GMT",
+      "address": "0x1Ad3Ad4CCe26c0E89Aa7EA44a7C2B00eBb5E51fF",
+      "lastUpdated": "Thu, 11 May 2023 16:08:29 GMT",
       "contractType": "StrategyVault",
       "abiPath": "test/5/StrategyVault.json"
     }
