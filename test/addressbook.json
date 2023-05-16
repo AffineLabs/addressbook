@@ -11798,8 +11798,8 @@
     "blockchain": "Polygon",
     "deployment_net": "Mumbai",
     "network_id": 80001,
-    "address": "0xBB491635fA717A22B7580B895544AFE11aBC4470",
-    "lastUpdated": "Tue, 16 May 2023 20:41:27 GMT",
+    "address": "0xa25313068b33b653bE34928793bb7Da7f5f6E5C1",
+    "lastUpdated": "Tue, 16 May 2023 21:24:23 GMT",
     "contractType": "StrategyVault",
     "abi": [
       {
