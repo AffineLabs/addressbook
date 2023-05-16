@@ -109,6 +109,12 @@
       "lastUpdated": "Sat, 19 Nov 2022 16:20:59 GMT",
       "contractType": "DeltaNeutralLpV3",
       "abiPath": "v1.0-beta/137/DeltaNeutralLpV3.json"
+    },
+    "PolygonDegen": {
+      "address": "0x684D1dbd30c67Fe7fF6D502A04e0E7076b4b9D46",
+      "lastUpdated": "Tue, 16 May 2023 01:02:49 GMT",
+      "contractType": "StrategyVault",
+      "abiPath": "v1.0-beta/137/StrategyVault.json"
     }
   }
 }
