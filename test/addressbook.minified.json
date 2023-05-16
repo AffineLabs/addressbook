@@ -73,6 +73,12 @@
       "lastUpdated": "Tue, 03 Jan 2023 17:55:36 GMT",
       "contractType": "TwoAssetBasket",
       "abiPath": "test/80001/TwoAssetBasket.json"
+    },
+    "PolygonDegen": {
+      "address": "0xBB491635fA717A22B7580B895544AFE11aBC4470",
+      "lastUpdated": "Tue, 16 May 2023 20:41:27 GMT",
+      "contractType": "StrategyVault",
+      "abiPath": "test/80001/StrategyVault.json"
     }
   }
 }
