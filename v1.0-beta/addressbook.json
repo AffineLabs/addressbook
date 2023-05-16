@@ -16716,7 +16716,7 @@
       }
     ],
     "events_to_watch": [],
-    "proof_format": "POW",
+    "proof_format": "POS",
     "version": "v1.0-beta"
   }
 }
