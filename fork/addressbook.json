@@ -16723,8 +16723,8 @@
     "blockchain": "Ethereum",
     "deployment_net": "Mainnet",
     "network_id": 1,
-    "address": "0xbD4735F191a3e4960eF92e2236c15bb3bE56D840",
-    "lastUpdated": "Thu, 01 Jun 2023 20:12:29 GMT",
+    "address": "0x1196B60c9ceFBF02C9a3960883213f47257BecdB",
+    "lastUpdated": "Fri, 02 Jun 2023 19:57:25 GMT",
     "contractType": "Vault",
     "abi": [
       {
