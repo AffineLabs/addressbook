@@ -116,7 +116,7 @@
       "contractType": "StrategyVault",
       "abiPath": "v1.0-beta/137/StrategyVault.json"
     },
-    "PolygonStEth": {
+    "PolygonStEthLev": {
       "address": "0xFe89E8F5c9d159B3a7D08f47645f0843897ADEc6",
       "lastUpdated": "Thu, 15 Jun 2023 00:20:04 GMT",
       "contractType": "Vault",

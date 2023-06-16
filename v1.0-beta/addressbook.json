@@ -16719,7 +16719,7 @@
     "proof_format": "POS",
     "version": "v1.0-beta"
   },
-  "PolygonStEth": {
+  "PolygonStEthLev": {
     "blockchain": "Polygon",
     "deployment_net": "Mainnet",
     "network_id": 137,
