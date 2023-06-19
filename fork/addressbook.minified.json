@@ -61,8 +61,8 @@
       "abiPath": "v1.0-beta/1/StrategyVault.json"
     },
     "EthStEthLev": {
-      "address": "0xbD4735F191a3e4960eF92e2236c15bb3bE56D840",
-      "lastUpdated": "Thu, 01 Jun 2023 20:12:29 GMT",
+      "address": "0x1196B60c9ceFBF02C9a3960883213f47257BecdB",
+      "lastUpdated": "Fri, 02 Jun 2023 19:57:25 GMT",
       "contractType": "Vault",
       "abiPath": "v1.0-beta/1/Vault.json"
     }
@@ -121,6 +121,12 @@
       "lastUpdated": "Tue, 16 May 2023 01:02:49 GMT",
       "contractType": "StrategyVault",
       "abiPath": "v1.0-beta/137/StrategyVault.json"
+    },
+    "PolygonStEthLev": {
+      "address": "0xFe89E8F5c9d159B3a7D08f47645f0843897ADEc6",
+      "lastUpdated": "Fri, 16 Jun 2023 20:06:47 GMT",
+      "contractType": "Vault",
+      "abiPath": "v1.0-beta/137/Vault.json"
     }
   }
 }
