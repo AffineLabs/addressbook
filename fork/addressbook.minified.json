@@ -129,7 +129,7 @@
       "abiPath": "v1.0-beta/137/Vault.json"
     },
     "AffineGenesis": {
-      "address": "0x5FbDB2315678afecb367f032d93F642f64180aa3",
+      "address": "0x981E895CBA9dA29927838A9feB699AB255999933",
       "lastUpdated": "Thu, 27 Jul 2023 15:42:34 GMT",
       "contractType": "AffineGenesis",
       "abiPath": "fork/137/AffineGenesis.json"
