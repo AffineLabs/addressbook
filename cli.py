@@ -1,29 +1,35 @@
 from collections import defaultdict
 from datetime import datetime
+from pathlib import Path
 
 import fire
 import json
 import os
 import requests
 
+
 def time_now():
     datetime_now = datetime.utcnow()
-    return datetime_now.strftime('%a, %d %b %Y %H:%M:%S GMT')
+    return datetime_now.strftime("%a, %d %b %Y %H:%M:%S GMT")
+
 
 def safe_mkdir(dir):
     os.makedirs(dir, exist_ok=True)
 
+
 def read_json(file_path):
     return json.load(open(file_path))
 
+
 def write_json(dir, file_name, json_dict):
     with open(os.path.join(dir, file_name), "w") as outfile:
-       json.dump(json_dict, outfile, indent = 2)
+        json.dump(json_dict, outfile, indent=2)
+
 
 class CLI:
     def build_from_s3(self, version):
         # Read the s3 addressbook object
-        s3_addressbook = requests.get(f'https://sc-abis.s3.us-east-2.amazonaws.com/{version}/addressbook.json').json()
+        s3_addressbook = requests.get(f"https://sc-abis.s3.us-east-2.amazonaws.com/{version}/addressbook.json").json()
 
         # Write the old format addressbook in version directory.
         version_dir = os.path.join(os.getcwd(), version)
@@ -38,13 +44,12 @@ class CLI:
                 "address": contract["address"],
                 "lastUpdated": contract["lastUpdated"],
                 "contractType": contract["contractType"],
-                "abiPath": f'{version}/{network_id}/{contract["contractType"]}.json'
+                "abiPath": f'{version}/{network_id}/{contract["contractType"]}.json',
             }
             network_dir = os.path.join(version_dir, str(network_id))
             safe_mkdir(network_dir)
             write_json(network_dir, f'{contract["contractType"]}.json', contract["abi"])
         write_json(version_dir, "addressbook.minified.json", new_addressbook)
-
 
     def patch_address(self, version, contract_name, new_address):
         time_now_gmt = time_now()
@@ -66,7 +71,9 @@ class CLI:
         write_json(version_dir, "addressbook.minified.json", new_addressbook)
 
     def patch_abi(self, version, contract_type, contract_abi_repo_branch):
-        new_abi = requests.get(f'https://raw.githubusercontent.com/AffineLabs/contracts/{contract_abi_repo_branch}/abi/{contract_type}.json').json()
+        new_abi = requests.get(
+            f"https://raw.githubusercontent.com/AffineLabs/contracts/{contract_abi_repo_branch}/abi/{contract_type}.json"
+        ).json()
 
         time_now_gmt = time_now()
         version_dir = os.path.join(os.getcwd(), version)
@@ -86,11 +93,15 @@ class CLI:
                 if contracts[contract_name]["contractType"] == contract_type:
                     contracts[contract_name]["lastUpdated"] = time_now_gmt
                     # Update the ABI file
-                    write_json(os.path.join(version_dir, network_id), f'{contract_type}.json', new_abi)
+                    write_json(os.path.join(version_dir, network_id), f"{contract_type}.json", new_abi)
         write_json(version_dir, "addressbook.minified.json", new_addressbook)
 
-    def new_contract(self, version, network_id, contract_name, contract_address, contract_type, contract_abi_repo_branch):
-        abi = requests.get(f'https://raw.githubusercontent.com/AffineLabs/contracts/{contract_abi_repo_branch}/abi/{contract_type}.json').json()
+    def new_contract(
+        self, version, network_id, contract_name, contract_address, contract_type, contract_abi_repo_branch
+    ):
+        abi = requests.get(
+            f"https://raw.githubusercontent.com/AffineLabs/contracts/{contract_abi_repo_branch}/abi/{contract_type}.json"
+        ).json()
 
         time_now_gmt = time_now()
         version_dir = os.path.join(os.getcwd(), version)
@@ -110,7 +121,15 @@ class CLI:
             80001: {
                 "blockchain": "Polygon",
                 "deployment_net": "Mumbai",
-            }
+            },
+            8453: {
+                "blockchain": "Base",
+                "deployment_net": "Mainnet",
+            },
+            84531: {
+                "blockchain": "Base",
+                "deployment_net": "Goerli",
+            },
         }
         # Update legacy addressbook
         legacy_addressbook = read_json(os.path.join(version_dir, "addressbook.json"))
@@ -121,21 +140,27 @@ class CLI:
             "address": contract_address,
             "lastUpdated": time_now_gmt,
             "contractType": contract_type,
-            "abi": abi
+            "abi": abi,
         }
         write_json(version_dir, "addressbook.json", legacy_addressbook)
 
         # Update new addressbook
         new_addressbook = read_json(os.path.join(version_dir, "addressbook.minified.json"))
+        if str(network_id) not in new_addressbook:
+            new_addressbook[str(network_id)] = {}
         new_addressbook[str(network_id)][contract_name] = {
             "address": contract_address,
             "lastUpdated": time_now_gmt,
             "contractType": contract_type,
-            "abiPath": f'{version}/{network_id}/{contract_type}.json'
+            "abiPath": f"{version}/{network_id}/{contract_type}.json",
         }
         write_json(version_dir, "addressbook.minified.json", new_addressbook)
 
         # Update the ABI file
-        write_json(os.path.join(version_dir, str(network_id)), f'{contract_type}.json', abi)
-if __name__ == '__main__': 
-    fire.Fire(CLI) 
+        abi_dir = os.path.join(version_dir, str(network_id))
+        Path(abi_dir).mkdir(parents=True, exist_ok=True)
+        write_json(abi_dir, f"{contract_type}.json", abi)
+
+
+if __name__ == "__main__":
+    fire.Fire(CLI)
