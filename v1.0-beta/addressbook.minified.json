@@ -128,5 +128,13 @@
       "contractType": "Vault",
       "abiPath": "v1.0-beta/137/Vault.json"
     }
+  },
+  "8453": {
+    "BaseUsdEarn": {
+      "address": "0x3A6B57ea121fbAB06f5A7Bf0626702EcB0Db7f11",
+      "lastUpdated": "Fri, 08 Sep 2023 14:13:11 GMT",
+      "contractType": "VaultV2",
+      "abiPath": "v1.0-beta/8453/VaultV2.json"
+    }
   }
 }
