@@ -80,5 +80,13 @@
       "contractType": "StrategyVault",
       "abiPath": "test/80001/StrategyVault.json"
     }
+  },
+  "84531": {
+    "BaseStEthLev": {
+      "address": "0xD777c8Ea70381854501e447314eCFF196C69587e",
+      "lastUpdated": "Fri, 15 Sep 2023 14:30:33 GMT",
+      "contractType": "VaultV2",
+      "abiPath": "test/84531/VaultV2.json"
+    }
   }
 }
