@@ -135,6 +135,12 @@
       "lastUpdated": "Fri, 08 Sep 2023 14:13:11 GMT",
       "contractType": "VaultV2",
       "abiPath": "v1.0-beta/8453/VaultV2.json"
+    },
+    "BaseStEthLev": {
+      "address": "0xb90a3d97114493C5b85D42086F3825a76dC03207",
+      "lastUpdated": "Fri, 15 Sep 2023 14:20:40 GMT",
+      "contractType": "VaultV2",
+      "abiPath": "v1.0-beta/8453/VaultV2.json"
     }
   }
 }
