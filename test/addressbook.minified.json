@@ -87,6 +87,12 @@
       "lastUpdated": "Fri, 15 Sep 2023 14:30:33 GMT",
       "contractType": "VaultV2",
       "abiPath": "test/84531/VaultV2.json"
+    },
+    "BaseRouter": {
+      "address": "0xc33617EA7Fe2707a73DC32805C7561128012EFcb",
+      "lastUpdated": "Fri, 15 Sep 2023 14:45:11 GMT",
+      "contractType": "Router",
+      "abiPath": "test/84531/Router.json"
     }
   }
 }
