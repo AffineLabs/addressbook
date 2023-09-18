@@ -83,8 +83,8 @@
   },
   "84531": {
     "BaseStEthLev": {
-      "address": "0xD777c8Ea70381854501e447314eCFF196C69587e",
-      "lastUpdated": "Fri, 15 Sep 2023 14:30:33 GMT",
+      "address": "0x5315839366615a087c993f87913D94932dCa0Df1",
+      "lastUpdated": "Mon, 18 Sep 2023 13:41:23 GMT",
       "contractType": "VaultV2",
       "abiPath": "test/84531/VaultV2.json"
     },
