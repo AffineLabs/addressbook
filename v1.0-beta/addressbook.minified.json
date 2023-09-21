@@ -147,6 +147,12 @@
       "lastUpdated": "Fri, 15 Sep 2023 14:48:41 GMT",
       "contractType": "Router",
       "abiPath": "v1.0-beta/8453/Router.json"
+    },
+    "BaseUsdcDegen": {
+      "address": "0xcb3f73F228B8980ec0766735b8F5551935556354",
+      "lastUpdated": "Thu, 21 Sep 2023 14:29:09 GMT",
+      "contractType": "VaultV2",
+      "abiPath": "v1.0-beta/8453/VaultV2.json"
     }
   }
 }
