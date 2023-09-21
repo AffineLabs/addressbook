@@ -127,12 +127,32 @@
       "lastUpdated": "Tue, 20 Jun 2023 14:31:09 GMT",
       "contractType": "Vault",
       "abiPath": "v1.0-beta/137/Vault.json"
+    }
+  },
+  "8453": {
+    "BaseUsdEarn": {
+      "address": "0x3A6B57ea121fbAB06f5A7Bf0626702EcB0Db7f11",
+      "lastUpdated": "Fri, 08 Sep 2023 14:13:11 GMT",
+      "contractType": "VaultV2",
+      "abiPath": "v1.0-beta/8453/VaultV2.json"
     },
-    "AffineGenesis": {
-      "address": "0x981E895CBA9dA29927838A9feB699AB255999933",
-      "lastUpdated": "Thu, 27 Jul 2023 15:42:34 GMT",
-      "contractType": "AffineGenesis",
-      "abiPath": "fork/137/AffineGenesis.json"
+    "BaseStEthLev": {
+      "address": "0x3b07A1A5de80f9b22DE0EC6C44C6E59DDc1C5f41",
+      "lastUpdated": "Mon, 18 Sep 2023 13:36:15 GMT",
+      "contractType": "VaultV2",
+      "abiPath": "v1.0-beta/8453/VaultV2.json"
+    },
+    "BaseRouter": {
+      "address": "0xC171127B3f054a4daeCC0E5D3AC4ed01dEEBA9c9",
+      "lastUpdated": "Fri, 15 Sep 2023 14:48:41 GMT",
+      "contractType": "Router",
+      "abiPath": "v1.0-beta/8453/Router.json"
+    },
+    "BaseUsdcDegen": {
+      "address": "0xcb3f73F228B8980ec0766735b8F5551935556354",
+      "lastUpdated": "Thu, 21 Sep 2023 14:29:09 GMT",
+      "contractType": "VaultV2",
+      "abiPath": "v1.0-beta/8453/VaultV2.json"
     }
   }
 }
