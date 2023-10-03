@@ -129,7 +129,7 @@
       "abiPath": "v1.0-beta/137/Vault.json"
     },
     "AffinePass": {
-      "address": "0xcc1bD10fc6Ae33Dc048D8d6c068B4376C6DCB64c",
+      "address": "0x0c17eB50f1f123E92f7Fc429600974314466321d",
       "lastUpdated": "Mon, 25 Sep 2023 17:06:35 GMT",
       "contractType": "AffinePass",
       "abiPath": "v1.0-beta/137/AffinePass.json"
