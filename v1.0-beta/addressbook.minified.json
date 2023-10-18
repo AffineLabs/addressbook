@@ -65,6 +65,12 @@
       "lastUpdated": "Fri, 02 Jun 2023 19:57:25 GMT",
       "contractType": "Vault",
       "abiPath": "v1.0-beta/1/Vault.json"
+    },
+    "AffinePassBridgeEthereum": {
+      "address": "0xA473fDfdBBaf3a31f14F5b69f0Dfc31cc5a14e83",
+      "lastUpdated": "Wed, 18 Oct 2023 18:59:06 GMT",
+      "contractType": "AffinePassBridge",
+      "abiPath": "v1.0-beta/1/AffinePassBridge.json"
     }
   },
   "137": {
@@ -133,6 +139,12 @@
       "lastUpdated": "Thu, 28 Sep 2023 14:09:55 GMT",
       "contractType": "AffinePass",
       "abiPath": "v1.0-beta/137/AffinePass.json"
+    },
+    "AffinePassBridgePolygon": {
+      "address": "0xd1B45F273Db3156110cB363325331337BB1deD14",
+      "lastUpdated": "Wed, 18 Oct 2023 17:36:32 GMT",
+      "contractType": "AffinePassBridge",
+      "abiPath": "v1.0-beta/137/AffinePassBridge.json"
     }
   },
   "8453": {
