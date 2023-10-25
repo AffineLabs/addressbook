@@ -28341,7 +28341,7 @@
     "deployment_net": "Mainnet",
     "network_id": 1,
     "address": "0x9244d2cf73861Ee7aA79Ffe90fe4eDF925482795",
-    "lastUpdated": "Wed, 25 Oct 2023 06:49:18 GMT",
+    "lastUpdated": "Wed, 23 Oct 2023 06:49:18 GMT",
     "contractType": "AffinePass",
     "abi": [
       {
