@@ -71,6 +71,12 @@
       "lastUpdated": "Wed, 18 Oct 2023 18:59:06 GMT",
       "contractType": "AffinePassBridge",
       "abiPath": "v1.0-beta/1/AffinePassBridge.json"
+    },
+    "AffinePassEth": {
+      "address": "0x9244d2cf73861Ee7aA79Ffe90fe4eDF925482795",
+      "lastUpdated": "Wed, 25 Oct 2023 06:49:18 GMT",
+      "contractType": "AffinePass",
+      "abiPath": "v1.0-beta/1/AffinePass.json"
     }
   },
   "137": {
