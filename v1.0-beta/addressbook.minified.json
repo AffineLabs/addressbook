@@ -77,6 +77,12 @@
       "lastUpdated": "Wed, 23 Oct 2023 06:49:18 GMT",
       "contractType": "AffinePass",
       "abiPath": "v1.0-beta/1/AffinePass.json"
+    },
+    "EthDegenEth": {
+      "address": "0xF5c10746B8EE6B69A17f66eCD642d2Fb9df8fcE0",
+      "lastUpdated": "Thu, 16 Nov 2023 17:42:49 GMT",
+      "contractType": "Vault",
+      "abiPath": "v1.0-beta/1/Vault.json"
     }
   },
   "137": {
