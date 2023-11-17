@@ -65,6 +65,24 @@
       "lastUpdated": "Fri, 02 Jun 2023 19:57:25 GMT",
       "contractType": "Vault",
       "abiPath": "v1.0-beta/1/Vault.json"
+    },
+    "AffinePassBridgeEthereum": {
+      "address": "0xA473fDfdBBaf3a31f14F5b69f0Dfc31cc5a14e83",
+      "lastUpdated": "Wed, 18 Oct 2023 18:59:06 GMT",
+      "contractType": "AffinePassBridge",
+      "abiPath": "v1.0-beta/1/AffinePassBridge.json"
+    },
+    "AffinePassEth": {
+      "address": "0x9244d2cf73861Ee7aA79Ffe90fe4eDF925482795",
+      "lastUpdated": "Wed, 23 Oct 2023 06:49:18 GMT",
+      "contractType": "AffinePass",
+      "abiPath": "v1.0-beta/1/AffinePass.json"
+    },
+    "EthDegenEth": {
+      "address": "0xF5c10746B8EE6B69A17f66eCD642d2Fb9df8fcE0",
+      "lastUpdated": "Thu, 16 Nov 2023 17:42:49 GMT",
+      "contractType": "Vault",
+      "abiPath": "v1.0-beta/1/Vault.json"
     }
   },
   "137": {
@@ -129,10 +147,16 @@
       "abiPath": "v1.0-beta/137/Vault.json"
     },
     "AffinePass": {
-      "address": "0x0c17eB50f1f123E92f7Fc429600974314466321d",
-      "lastUpdated": "Mon, 25 Sep 2023 17:06:35 GMT",
+      "address": "0x962e765a68c12e5c890589ba66bfd848d0ee52c5",
+      "lastUpdated": "Thu, 28 Sep 2023 14:09:55 GMT",
       "contractType": "AffinePass",
       "abiPath": "v1.0-beta/137/AffinePass.json"
+    },
+    "AffinePassBridgePolygon": {
+      "address": "0xd1B45F273Db3156110cB363325331337BB1deD14",
+      "lastUpdated": "Wed, 18 Oct 2023 17:36:32 GMT",
+      "contractType": "AffinePassBridge",
+      "abiPath": "v1.0-beta/137/AffinePassBridge.json"
     }
   },
   "8453": {
