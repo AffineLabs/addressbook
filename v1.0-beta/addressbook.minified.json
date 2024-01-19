@@ -157,6 +157,12 @@
       "lastUpdated": "Wed, 18 Oct 2023 17:36:32 GMT",
       "contractType": "AffinePassBridge",
       "abiPath": "v1.0-beta/137/AffinePassBridge.json"
+    },
+    "PolygonLevMaticX": {
+      "address": "0x5cfD50De188a36d2089927c5a14E143DC65Af780",
+      "lastUpdated": "Fri, 19 Jan 2024 07:14:44 GMT",
+      "contractType": "VaultV2",
+      "abiPath": "v1.0-beta/137/VaultV2.json"
     }
   },
   "8453": {
