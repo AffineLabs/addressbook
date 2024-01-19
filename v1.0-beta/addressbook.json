@@ -5200,8 +5200,8 @@
     "blockchain": "Polygon",
     "deployment_net": "Matic",
     "network_id": 137,
-    "address": "0x9d39ba71f30f44FB72e7b45151C27079C2cd8ECa",
-    "lastUpdated": "Sat, 19 Nov 2022 16:20:58 GMT",
+    "address": "0xB8DC4Ef86C4aDf6A596Fbff8f9139a99Fa5Fa964",
+    "lastUpdated": "Fri, 19 Jan 2024 18:05:51 GMT",
     "contractType": "Router",
     "abi": [
       {
@@ -5212,8 +5212,8 @@
             "type": "string"
           },
           {
-            "internalType": "address",
-            "name": "forwarder",
+            "internalType": "contract IWETH",
+            "name": "_weth",
             "type": "address"
           }
         ],
@@ -5327,6 +5327,13 @@
         "type": "function"
       },
       {
+        "inputs": [],
+        "name": "depositNative",
+        "outputs": [],
+        "stateMutability": "payable",
+        "type": "function"
+      },
+      {
         "inputs": [
           {
             "internalType": "contract IERC4626",
@@ -5358,25 +5365,6 @@
           }
         ],
         "stateMutability": "payable",
-        "type": "function"
-      },
-      {
-        "inputs": [
-          {
-            "internalType": "address",
-            "name": "forwarder",
-            "type": "address"
-          }
-        ],
-        "name": "isTrustedForwarder",
-        "outputs": [
-          {
-            "internalType": "bool",
-            "name": "",
-            "type": "bool"
-          }
-        ],
-        "stateMutability": "view",
         "type": "function"
       },
       {
@@ -5536,25 +5524,12 @@
       },
       {
         "inputs": [],
-        "name": "trustedForwarder",
+        "name": "weth",
         "outputs": [
           {
-            "internalType": "address",
+            "internalType": "contract IWETH",
             "name": "",
             "type": "address"
-          }
-        ],
-        "stateMutability": "view",
-        "type": "function"
-      },
-      {
-        "inputs": [],
-        "name": "versionRecipient",
-        "outputs": [
-          {
-            "internalType": "string",
-            "name": "",
-            "type": "string"
           }
         ],
         "stateMutability": "view",
@@ -11539,7 +11514,7 @@
     "deployment_net": "Mainnet",
     "network_id": 1,
     "address": "0x9884E77B83880dDfa81457273D21E260d4E3B6eB",
-    "lastUpdated": "Fri, 24 Mar 2023 20:24:34 GMT",
+    "lastUpdated": "Fri, 19 Jan 2024 18:05:51 GMT",
     "contractType": "Router",
     "abi": [
       {
@@ -11548,11 +11523,6 @@
             "internalType": "string",
             "name": "name",
             "type": "string"
-          },
-          {
-            "internalType": "address",
-            "name": "forwarder",
-            "type": "address"
           },
           {
             "internalType": "contract IWETH",
@@ -11713,25 +11683,6 @@
       {
         "inputs": [
           {
-            "internalType": "address",
-            "name": "forwarder",
-            "type": "address"
-          }
-        ],
-        "name": "isTrustedForwarder",
-        "outputs": [
-          {
-            "internalType": "bool",
-            "name": "",
-            "type": "bool"
-          }
-        ],
-        "stateMutability": "view",
-        "type": "function"
-      },
-      {
-        "inputs": [
-          {
             "internalType": "contract IERC4626",
             "name": "vault",
             "type": "address"
@@ -11882,32 +11833,6 @@
           }
         ],
         "stateMutability": "payable",
-        "type": "function"
-      },
-      {
-        "inputs": [],
-        "name": "trustedForwarder",
-        "outputs": [
-          {
-            "internalType": "address",
-            "name": "",
-            "type": "address"
-          }
-        ],
-        "stateMutability": "view",
-        "type": "function"
-      },
-      {
-        "inputs": [],
-        "name": "versionRecipient",
-        "outputs": [
-          {
-            "internalType": "string",
-            "name": "",
-            "type": "string"
-          }
-        ],
-        "stateMutability": "view",
         "type": "function"
       },
       {
@@ -23810,7 +23735,7 @@
     "deployment_net": "Mainnet",
     "network_id": 8453,
     "address": "0xC171127B3f054a4daeCC0E5D3AC4ed01dEEBA9c9",
-    "lastUpdated": "Fri, 15 Sep 2023 14:48:41 GMT",
+    "lastUpdated": "Fri, 19 Jan 2024 18:05:51 GMT",
     "contractType": "Router",
     "abi": [
       {
@@ -23819,11 +23744,6 @@
             "internalType": "string",
             "name": "name",
             "type": "string"
-          },
-          {
-            "internalType": "address",
-            "name": "forwarder",
-            "type": "address"
           },
           {
             "internalType": "contract IWETH",
@@ -23984,25 +23904,6 @@
       {
         "inputs": [
           {
-            "internalType": "address",
-            "name": "forwarder",
-            "type": "address"
-          }
-        ],
-        "name": "isTrustedForwarder",
-        "outputs": [
-          {
-            "internalType": "bool",
-            "name": "",
-            "type": "bool"
-          }
-        ],
-        "stateMutability": "view",
-        "type": "function"
-      },
-      {
-        "inputs": [
-          {
             "internalType": "contract IERC4626",
             "name": "vault",
             "type": "address"
@@ -24153,32 +24054,6 @@
           }
         ],
         "stateMutability": "payable",
-        "type": "function"
-      },
-      {
-        "inputs": [],
-        "name": "trustedForwarder",
-        "outputs": [
-          {
-            "internalType": "address",
-            "name": "",
-            "type": "address"
-          }
-        ],
-        "stateMutability": "view",
-        "type": "function"
-      },
-      {
-        "inputs": [],
-        "name": "versionRecipient",
-        "outputs": [
-          {
-            "internalType": "string",
-            "name": "",
-            "type": "string"
-          }
-        ],
-        "stateMutability": "view",
         "type": "function"
       },
       {
