@@ -44,7 +44,7 @@
     },
     "EthRouter": {
       "address": "0x9884E77B83880dDfa81457273D21E260d4E3B6eB",
-      "lastUpdated": "Fri, 24 Mar 2023 20:24:34 GMT",
+      "lastUpdated": "Fri, 19 Jan 2024 18:05:51 GMT",
       "contractType": "Router",
       "abiPath": "v1.0-beta/1/Router.json"
     },
@@ -105,8 +105,8 @@
       "abiPath": "v1.0-beta/137/L2WormholeRouter.json"
     },
     "ERC4626Router": {
-      "address": "0x9d39ba71f30f44FB72e7b45151C27079C2cd8ECa",
-      "lastUpdated": "Sat, 19 Nov 2022 16:20:58 GMT",
+      "address": "0xB8DC4Ef86C4aDf6A596Fbff8f9139a99Fa5Fa964",
+      "lastUpdated": "Fri, 19 Jan 2024 18:05:51 GMT",
       "contractType": "Router",
       "abiPath": "v1.0-beta/137/Router.json"
     },
@@ -180,7 +180,7 @@
     },
     "BaseRouter": {
       "address": "0xC171127B3f054a4daeCC0E5D3AC4ed01dEEBA9c9",
-      "lastUpdated": "Fri, 15 Sep 2023 14:48:41 GMT",
+      "lastUpdated": "Fri, 19 Jan 2024 18:05:51 GMT",
       "contractType": "Router",
       "abiPath": "v1.0-beta/8453/Router.json"
     },
