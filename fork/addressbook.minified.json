@@ -44,7 +44,7 @@
     },
     "EthRouter": {
       "address": "0x9884E77B83880dDfa81457273D21E260d4E3B6eB",
-      "lastUpdated": "Fri, 24 Mar 2023 20:24:34 GMT",
+      "lastUpdated": "Fri, 19 Jan 2024 18:05:51 GMT",
       "contractType": "Router",
       "abiPath": "v1.0-beta/1/Router.json"
     },
@@ -83,6 +83,12 @@
       "lastUpdated": "Thu, 16 Nov 2023 17:42:49 GMT",
       "contractType": "Vault",
       "abiPath": "v1.0-beta/1/Vault.json"
+    },
+    "AffineReStaking": {
+      "address": "0x4278C5d322aB92F1D876Dd7Bd9b44d1748b88af2",
+      "lastUpdated": "Wed, 28 Feb 2024 20:51:07 GMT",
+      "contractType": "AffineReStaking",
+      "abiPath": "v1.0-beta/1/AffineReStaking.json"
     }
   },
   "137": {
@@ -105,8 +111,8 @@
       "abiPath": "v1.0-beta/137/L2WormholeRouter.json"
     },
     "ERC4626Router": {
-      "address": "0x9d39ba71f30f44FB72e7b45151C27079C2cd8ECa",
-      "lastUpdated": "Sat, 19 Nov 2022 16:20:58 GMT",
+      "address": "0xB8DC4Ef86C4aDf6A596Fbff8f9139a99Fa5Fa964",
+      "lastUpdated": "Fri, 19 Jan 2024 18:05:51 GMT",
       "contractType": "Router",
       "abiPath": "v1.0-beta/137/Router.json"
     },
@@ -157,6 +163,12 @@
       "lastUpdated": "Wed, 18 Oct 2023 17:36:32 GMT",
       "contractType": "AffinePassBridge",
       "abiPath": "v1.0-beta/137/AffinePassBridge.json"
+    },
+    "PolygonLevMaticX": {
+      "address": "0x5cfD50De188a36d2089927c5a14E143DC65Af780",
+      "lastUpdated": "Fri, 19 Jan 2024 07:14:44 GMT",
+      "contractType": "VaultV2",
+      "abiPath": "v1.0-beta/137/VaultV2.json"
     }
   },
   "8453": {
@@ -174,7 +186,7 @@
     },
     "BaseRouter": {
       "address": "0xC171127B3f054a4daeCC0E5D3AC4ed01dEEBA9c9",
-      "lastUpdated": "Fri, 15 Sep 2023 14:48:41 GMT",
+      "lastUpdated": "Fri, 19 Jan 2024 18:05:51 GMT",
       "contractType": "Router",
       "abiPath": "v1.0-beta/8453/Router.json"
     },
