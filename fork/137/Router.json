@@ -7,8 +7,8 @@
         "type": "string"
       },
       {
-        "internalType": "address",
-        "name": "forwarder",
+        "internalType": "contract IWETH",
+        "name": "_weth",
         "type": "address"
       }
     ],
@@ -122,6 +122,13 @@
     "type": "function"
   },
   {
+    "inputs": [],
+    "name": "depositNative",
+    "outputs": [],
+    "stateMutability": "payable",
+    "type": "function"
+  },
+  {
     "inputs": [
       {
         "internalType": "contract IERC4626",
@@ -153,25 +160,6 @@
       }
     ],
     "stateMutability": "payable",
-    "type": "function"
-  },
-  {
-    "inputs": [
-      {
-        "internalType": "address",
-        "name": "forwarder",
-        "type": "address"
-      }
-    ],
-    "name": "isTrustedForwarder",
-    "outputs": [
-      {
-        "internalType": "bool",
-        "name": "",
-        "type": "bool"
-      }
-    ],
-    "stateMutability": "view",
     "type": "function"
   },
   {
@@ -331,25 +319,12 @@
   },
   {
     "inputs": [],
-    "name": "trustedForwarder",
+    "name": "weth",
     "outputs": [
       {
-        "internalType": "address",
+        "internalType": "contract IWETH",
         "name": "",
         "type": "address"
-      }
-    ],
-    "stateMutability": "view",
-    "type": "function"
-  },
-  {
-    "inputs": [],
-    "name": "versionRecipient",
-    "outputs": [
-      {
-        "internalType": "string",
-        "name": "",
-        "type": "string"
       }
     ],
     "stateMutability": "view",
