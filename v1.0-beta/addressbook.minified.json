@@ -83,6 +83,12 @@
       "lastUpdated": "Thu, 16 Nov 2023 17:42:49 GMT",
       "contractType": "Vault",
       "abiPath": "v1.0-beta/1/Vault.json"
+    },
+    "AffineReStaking": {
+      "address": "0x975dB7A7402fdFcB4C6429054537004e6149b4A4",
+      "lastUpdated": "Thu, 29 Feb 2024 21:00:27 GMT",
+      "contractType": "AffineReStaking",
+      "abiPath": "v1.0-beta/1/AffineReStaking.json"
     }
   },
   "137": {
