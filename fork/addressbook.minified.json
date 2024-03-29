@@ -85,8 +85,8 @@
       "abiPath": "v1.0-beta/1/Vault.json"
     },
     "AffineReStaking": {
-      "address": "0x4278C5d322aB92F1D876Dd7Bd9b44d1748b88af2",
-      "lastUpdated": "Wed, 28 Feb 2024 20:51:07 GMT",
+      "address": "0xDeD1AFF83Ec45560FEA90020C72620336302BAc1",
+      "lastUpdated": "Thu, 29 Feb 2024 21:00:27 GMT",
       "contractType": "AffineReStaking",
       "abiPath": "v1.0-beta/1/AffineReStaking.json"
     }
@@ -167,6 +167,12 @@
     "PolygonLevMaticX": {
       "address": "0x5cfD50De188a36d2089927c5a14E143DC65Af780",
       "lastUpdated": "Fri, 19 Jan 2024 07:14:44 GMT",
+      "contractType": "VaultV2",
+      "abiPath": "v1.0-beta/137/VaultV2.json"
+    },
+    "Polygon6xLevMaticX": {
+      "address": "",
+      "lastUpdated": "Fri, 29 Mar 2024 20:53:33 GMT",
       "contractType": "VaultV2",
       "abiPath": "v1.0-beta/137/VaultV2.json"
     }
