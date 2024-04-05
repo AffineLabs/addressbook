@@ -169,6 +169,12 @@
       "lastUpdated": "Fri, 19 Jan 2024 07:14:44 GMT",
       "contractType": "VaultV2",
       "abiPath": "v1.0-beta/137/VaultV2.json"
+    },
+    "Polygon6xLevMaticX": {
+      "address": "0x538eb8Ce2530fEC34275D475923CADa158AC7044",
+      "lastUpdated": "Fri, 05 Apr 2024 16:47:18 GMT",
+      "contractType": "VaultV2",
+      "abiPath": "v1.0-beta/137/VaultV2.json"
     }
   },
   "8453": {
