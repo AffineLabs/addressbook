@@ -33329,8 +33329,8 @@
     "blockchain": "Polygon",
     "deployment_net": "Mainnet",
     "network_id": 137,
-    "address": "0x538eb8Ce2530fEC34275D475923CADa158AC7044",
-    "lastUpdated": "Fri, 05 Apr 2024 16:47:18 GMT",
+    "address": "0x78589e94401647C1b9A807feb7EAA162e9e65bBD",
+    "lastUpdated": "Thu, 11 Apr 2024 06:49:00 GMT",
     "contractType": "VaultV2",
     "abi": [
       {
