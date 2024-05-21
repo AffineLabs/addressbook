@@ -107,6 +107,12 @@
       "lastUpdated": "Tue, 21 May 2024 14:16:58 GMT",
       "contractType": "WithdrawalEscrowV2",
       "abiPath": "test/17000/WithdrawalEscrowV2.json"
+    },
+    "HoleskyRouter": {
+      "address": "0xff87595De7b24593e3B3c829B55e30A9E44236eA",
+      "lastUpdated": "Tue, 21 May 2024 15:14:21 GMT",
+      "contractType": "Router",
+      "abiPath": "test/17000/Router.json"
     }
   }
 }
