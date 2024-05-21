@@ -130,6 +130,10 @@ class CLI:
                 "blockchain": "Base",
                 "deployment_net": "Goerli",
             },
+            17000: {
+                "blockchain": "Ethereum",
+                "deployment_net": "Holesky",
+            },
         }
         # Update legacy addressbook
         legacy_addressbook = read_json(os.path.join(version_dir, "addressbook.json"))

@@ -94,5 +94,19 @@
       "contractType": "Router",
       "abiPath": "test/84531/Router.json"
     }
+  },
+  "17000": {
+    "UltraLRT": {
+      "address": "0x3A6B57ea121fbAB06f5A7Bf0626702EcB0Db7f11",
+      "lastUpdated": "Tue, 21 May 2024 14:15:35 GMT",
+      "contractType": "UltraLRT",
+      "abiPath": "test/17000/UltraLRT.json"
+    },
+    "WithdrawalEscrowV2": {
+      "address": "0x5315839366615a087c993f87913D94932dCa0Df1",
+      "lastUpdated": "Tue, 21 May 2024 14:16:58 GMT",
+      "contractType": "WithdrawalEscrowV2",
+      "abiPath": "test/17000/WithdrawalEscrowV2.json"
+    }
   }
 }
