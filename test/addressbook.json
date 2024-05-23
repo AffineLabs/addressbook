@@ -15721,7 +15721,7 @@
     "blockchain": "Ethereum",
     "deployment_net": "Holesky",
     "network_id": 17000,
-    "address": "0x3A6B57ea121fbAB06f5A7Bf0626702EcB0Db7f11",
+    "address": "0x3b07A1A5de80f9b22DE0EC6C44C6E59DDc1C5f41",
     "lastUpdated": "Tue, 21 May 2024 14:15:35 GMT",
     "contractType": "UltraLRT",
     "abi": [
@@ -17362,7 +17362,7 @@
     "blockchain": "Ethereum",
     "deployment_net": "Holesky",
     "network_id": 17000,
-    "address": "0x5315839366615a087c993f87913D94932dCa0Df1",
+    "address": "0x84eF1F1A7f14A237c4b1DA8d13548123879FC3A9",
     "lastUpdated": "Tue, 21 May 2024 14:16:58 GMT",
     "contractType": "WithdrawalEscrowV2",
     "abi": [
