@@ -17356,7 +17356,10 @@
         "stateMutability": "view",
         "type": "function"
       }
-    ]
+    ],
+    "events_to_watch": [],
+    "proof_format": "POA",
+    "version": "test"
   },
   "WithdrawalEscrowV2": {
     "blockchain": "Ethereum",
@@ -17712,7 +17715,10 @@
         "stateMutability": "view",
         "type": "function"
       }
-    ]
+    ],
+    "events_to_watch": [],
+    "proof_format": "POA",
+    "version": "test"
   },
   "HoleskyRouter": {
     "blockchain": "Ethereum",
@@ -18133,7 +18139,7 @@
       }
     ],
     "events_to_watch": [],
-    "proof_format": "POS",
+    "proof_format": "POA",
     "version": "test"
   }
 }
