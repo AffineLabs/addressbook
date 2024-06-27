@@ -96,9 +96,15 @@
     }
   },
   "17000": {
-    "UltraLRT": {
+    "StEthUltraEth": {
       "address": "0x3b07A1A5de80f9b22DE0EC6C44C6E59DDc1C5f41",
-      "lastUpdated": "Tue, 21 May 2024 14:15:35 GMT",
+      "lastUpdated": "Wed, 26 Jun 2024 22:26:34 GMT",
+      "contractType": "UltraLRT",
+      "abiPath": "test/17000/UltraLRT.json"
+    },
+    "WStEthUltraEths": {
+      "address": "0x9666aB93452dC300C6b7412936D114bF1F737B1B",
+      "lastUpdated": "Wed, 26 Jun 2024 22:28:09 GMT",
       "contractType": "UltraLRT",
       "abiPath": "test/17000/UltraLRT.json"
     },
