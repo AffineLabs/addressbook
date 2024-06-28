@@ -35189,7 +35189,7 @@
     "blockchain": "Ethereum",
     "deployment_net": "Mainnet",
     "network_id": 1,
-    "address": "0x5cfD50De188a36d2089927c5a14E143DC65Af780",
+    "address": "0x47657094e3AF11c47d5eF4D3598A1536B394EEc4",
     "lastUpdated": "Wed, 26 Jun 2024 22:26:34 GMT",
     "contractType": "UltraLRT",
     "abi": [
@@ -36918,7 +36918,7 @@
     "blockchain": "Ethereum",
     "deployment_net": "Mainnet",
     "network_id": 1,
-    "address": "0x33795E56250d50065a20E923707fD7396cd938C9",
+    "address": "0x0D53bc2BA508dFdf47084d511F13Bb2eb3f8317B",
     "lastUpdated": "Wed, 26 Jun 2024 22:28:09 GMT",
     "contractType": "UltraLRT",
     "abi": [
