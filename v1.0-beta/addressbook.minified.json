@@ -101,6 +101,12 @@
       "lastUpdated": "Wed, 26 Jun 2024 22:28:09 GMT",
       "contractType": "UltraLRT",
       "abiPath": "v1.0-beta/1/UltraLRT.json"
+    },
+    "EthSymbioticUltraEths": {
+      "address": "0x91F822fAFc1db552e78f49941776aCB2a78fD422",
+      "lastUpdated": "Sun, 18 Aug 2024 22:48:12 GMT",
+      "contractType": "XUltraLRT",
+      "abiPath": "v1.0-beta/1/XUltraLRT.json"
     }
   },
   "137": {
@@ -213,6 +219,14 @@
       "lastUpdated": "Thu, 21 Sep 2023 14:29:09 GMT",
       "contractType": "VaultV2",
       "abiPath": "v1.0-beta/8453/VaultV2.json"
+    }
+  },
+  "81457": {
+    "BlastSymbioticUltraEths": {
+      "address": "0xbb4e01B8940E8E2b3a95cED7941969D033786FF7",
+      "lastUpdated": "Sun, 18 Aug 2024 22:50:46 GMT",
+      "contractType": "XUltraLRT",
+      "abiPath": "v1.0-beta/81457/XUltraLRT.json"
     }
   }
 }
