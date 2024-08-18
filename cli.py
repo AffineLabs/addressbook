@@ -29,7 +29,9 @@ def write_json(dir, file_name, json_dict):
 class CLI:
     def build_from_s3(self, version):
         # Read the s3 addressbook object
-        s3_addressbook = requests.get(f"https://sc-abis.s3.us-east-2.amazonaws.com/{version}/addressbook.json").json()
+        s3_addressbook = requests.get(
+            f"https://sc-abis.s3.us-east-2.amazonaws.com/{version}/addressbook.json"
+        ).json()
 
         # Write the old format addressbook in version directory.
         version_dir = os.path.join(os.getcwd(), version)
@@ -63,7 +65,9 @@ class CLI:
         write_json(version_dir, "addressbook.json", legacy_addressbook)
 
         # Update new addressbook
-        new_addressbook = read_json(os.path.join(version_dir, "addressbook.minified.json"))
+        new_addressbook = read_json(
+            os.path.join(version_dir, "addressbook.minified.json")
+        )
         for network_id, contracts in new_addressbook.items():
             if contract_name in contracts:
                 contracts[contract_name]["address"] = new_address
@@ -87,20 +91,33 @@ class CLI:
         write_json(version_dir, "addressbook.json", legacy_addressbook)
 
         # Update new addressbook
-        new_addressbook = read_json(os.path.join(version_dir, "addressbook.minified.json"))
+        new_addressbook = read_json(
+            os.path.join(version_dir, "addressbook.minified.json")
+        )
         for network_id, contracts in new_addressbook.items():
             for contract_name in contracts.keys():
                 if contracts[contract_name]["contractType"] == contract_type:
                     contracts[contract_name]["lastUpdated"] = time_now_gmt
                     # Update the ABI file
-                    write_json(os.path.join(version_dir, network_id), f"{contract_type}.json", new_abi)
+                    write_json(
+                        os.path.join(version_dir, network_id),
+                        f"{contract_type}.json",
+                        new_abi,
+                    )
         write_json(version_dir, "addressbook.minified.json", new_addressbook)
 
     def new_contract(
-        self, version, network_id, contract_name, contract_address, contract_type, contract_abi_repo_branch
+        self,
+        version,
+        network_id,
+        contract_name,
+        contract_address,
+        contract_type,
+        contract_repo,
+        repo_branch,
     ):
         abi = requests.get(
-            f"https://raw.githubusercontent.com/AffineLabs/contracts/{contract_abi_repo_branch}/abi/{contract_type}.json"
+            f"https://raw.githubusercontent.com/AffineLabs/{contract_repo}/{repo_branch}/abi/{contract_type}.json"
         ).json()
 
         time_now_gmt = time_now()
@@ -134,6 +151,14 @@ class CLI:
                 "blockchain": "Ethereum",
                 "deployment_net": "Holesky",
             },
+            81457: {
+                "blockchain": "Blast",
+                "deployment_net": "Mainnet",
+            },
+            168587773: {
+                "blockchain": "Blast",
+                "deployment_net": "Sepolia",
+            },
         }
         # Update legacy addressbook
         legacy_addressbook = read_json(os.path.join(version_dir, "addressbook.json"))
@@ -149,7 +174,9 @@ class CLI:
         write_json(version_dir, "addressbook.json", legacy_addressbook)
 
         # Update new addressbook
-        new_addressbook = read_json(os.path.join(version_dir, "addressbook.minified.json"))
+        new_addressbook = read_json(
+            os.path.join(version_dir, "addressbook.minified.json")
+        )
         if str(network_id) not in new_addressbook:
             new_addressbook[str(network_id)] = {}
         new_addressbook[str(network_id)][contract_name] = {
