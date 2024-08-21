@@ -228,5 +228,13 @@
       "contractType": "XUltraLRT",
       "abiPath": "v1.0-beta/81457/XUltraLRT.json"
     }
+  },
+  "59144": {
+    "LineaSymbioticUltraEths": {
+      "address": "0xB838Eb4F224c2454F2529213721500faf732bf4d",
+      "lastUpdated": "Wed, 21 Aug 2024 21:39:11 GMT",
+      "contractType": "XUltraLRT",
+      "abiPath": "v1.0-beta/59144/XUltraLRT.json"
+    }
   }
 }

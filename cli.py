@@ -159,6 +159,10 @@ class CLI:
                 "blockchain": "Blast",
                 "deployment_net": "Sepolia",
             },
+            59144: {
+                "blockchain": "Linea",
+                "deployment_net": "Mainnet",
+            },
         }
         # Update legacy addressbook
         legacy_addressbook = read_json(os.path.join(version_dir, "addressbook.json"))
