@@ -236,5 +236,13 @@
       "contractType": "XUltraLRT",
       "abiPath": "v1.0-beta/59144/XUltraLRT.json"
     }
+  },
+  "167000": {
+    "TaikoSymbioticUltraEths": {
+      "address": "0x5217C8F3B7fb8B6501C8FF2a4C09b14B4B08C9f9",
+      "lastUpdated": "Wed, 11 Sep 2024 20:59:50 GMT",
+      "contractType": "XUltraLRT",
+      "abiPath": "v1.0-beta/167000/XUltraLRT.json"
+    }
   }
 }
