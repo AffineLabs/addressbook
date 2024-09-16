@@ -219,6 +219,12 @@
       "lastUpdated": "Thu, 21 Sep 2023 14:29:09 GMT",
       "contractType": "VaultV2",
       "abiPath": "v1.0-beta/8453/VaultV2.json"
+    },
+    "BaseSymbioticUltraEths": {
+      "address": "0x14Dc0EA777a87CAF54E49c9375B39727e1D85B69",
+      "lastUpdated": "Mon, 16 Sep 2024 19:54:00 GMT",
+      "contractType": "XUltraLRT",
+      "abiPath": "v1.0-beta/8453/XUltraLRT.json"
     }
   },
   "81457": {
